@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <div class="container-fluid h-100">
+
+     <div class="row">
+       <div class="col-12 col-md-9 mx-auto">
+         <div class="btn btn-primary w-100" id="tuner" data-status="off">
+           <div class="h1">
+             TUNE
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="row justify-content-center">
+       <div class="col-12 col-md-9 mx-auto">
+         <h2>Rhythm: <span id="rhythmValue"></span> bpm</h2>
+         <br>
+         <div class="slidecontainer">
+           <input type="range" min="1" max="240" value="120" class="slider" id="rhythm">
+         </div>
+       </div>
+     </div>
+
+     <div class="row justify-content-center">
+       <div class="col-12 col-md-9 mx-auto">
+         <h2>Duratation: <span id="playTimeValue"></span> min.</h2>
+         <br>
+         <div class="slidecontainer">
+           <input type="range" min="1" max="60" value="15" class="slider" id="playTime">
+         </div>
+       </div>
+     </div>
+
+
+     <div class="row justify-content-center mt-4">
+       <div class="col-12 col-md-9 mx-auto">
+        <div class="ml-4">
+          <input type="checkbox" id="check"/><h4 class="d-inline pl-3">Increase rhythm</h4> 
+        </div>
+
+          <div id="extraParams" style="display:none" class="mt-4">
+            <div class="">
+              <h2>Every <span id="increasePeriodValue"></span> min.</h2>
+              <br>
+              <div class="slidecontainer">
+                <input type="range" min="1" max="15" value="2" class="slider" id="increasePeriod">
+              </div>
+            </div>
+
+            <div class="">
+              <h2>Increase for <span id="increaseNumberValue"></span> bpm</h2>
+              <div class="slidecontainer">
+                <input type="range" min="1" max="60" value="4" class="slider" id="increaseNumber">
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+
+     <div class="row mt-5">
+       <div class="col-12 col-md-9 mx-auto">
+         <div class="btn btn-primary w-100" id="startStopBtn">
+             <div class="h1">
+               START
+             </div>
+         </div>
+       </div>
+     </div>
+
+    </div>
+
+  </body>
+  <script type="text/javascript" src="vendor/js/shake.js"></script>
+  <script type="text/javascript" src="js/metronome.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <script>  
+
+</script>
+</html>

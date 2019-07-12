@@ -1,0 +1,14 @@
+{
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "esversion": 6,
+  "browser": true,
+  "globals": {
+   "console": true,
+   "Metronome": true,
+   "Shake": true,
+   "AudioContext": true,
+   "tuner": true
+  }
+}
